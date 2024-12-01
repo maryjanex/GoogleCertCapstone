@@ -1,0 +1,36 @@
+-- Data Combination
+
+DROP TABLE IF EXISTS `2024_tripdata.combined_data`;
+
+-- combining all the 12 months data tables into a single table containing data from November 2023 to October 2024.
+
+CREATE TABLE IF NOT EXISTS `2024_tripdata.combined_data` AS (
+  SELECT * FROM `2024_tripdata.112023_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.122023_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.012024_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.022024_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.032024_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.042024_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.052024_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.062024_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.072024_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.082024_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.092024_tripdata`
+  UNION ALL
+  SELECT * FROM `2024_tripdata.102024_tripdata`
+);
+
+-- checking no of rows which are 5,933,712
+
+SELECT COUNT(*)
+FROM `2024_tripdata.combined_data`;
