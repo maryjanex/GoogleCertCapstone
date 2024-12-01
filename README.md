@@ -18,6 +18,8 @@ There are 12 files with the naming convention of MMYYYY-divvy-tripdata and each 
 # Process
 I chose to use BigQuery to analyze my data as Microsoft Excel cannot process more than one million rows. The Cyclistic data has more than 5.9 million rows. 
 
+SQL Query: [Data Combination]([https://github.com/maryjanex/GoogleCertCapstone/blob/main/Data%20Combination])
+
 # Analyze
 # Share
 # Act
