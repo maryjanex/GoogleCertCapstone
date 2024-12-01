@@ -16,7 +16,7 @@ I will use Cyclistic's historical trip data to analyze and identify trends, I do
 This is public data that can be used to explore how different customer types are using Cyclistic bikes. But note that data-privacy issues prohibit from using riders’ personally identifiable information. This means that we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 There are 12 files with the naming convention of MMYYYY-divvy-tripdata and each file includes information for one month, such as the ride id, bike type, start time, end time, start station, end station, start location, end location, and whether the rider is a member or not. The corresponding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.
 # Process
-I chose to use BigQuery to analyze my data as Excel cannot process more than one million rows. The Cyclistic data has more than 5.9 million rows. 
+I chose to use BigQuery to analyze my data as Microsoft Excel cannot process more than one million rows. The Cyclistic data has more than 5.9 million rows. 
 
 # Analyze
 # Share
