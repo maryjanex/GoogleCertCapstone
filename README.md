@@ -21,6 +21,7 @@ I chose to use BigQuery to analyze my data as Microsoft Excel cannot process mor
 **Data Combination**
 
 SQL Query: [Data Combination](https://github.com/maryjanex/GoogleCertCapstone/blob/main/Data%20Combination)
+
 I combined the 12 csv files into one table named "combined_data" containing 5,933,712 rows of data.
 
 **Data Exploration**
