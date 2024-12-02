@@ -18,9 +18,33 @@ There are 12 files with the naming convention of MMYYYY-divvy-tripdata and each 
 # Process
 I chose to use BigQuery to analyze my data as Microsoft Excel cannot process more than one million rows. The Cyclistic data has more than 5.9 million rows. 
 
-*Data Combination**
+**Data Combination**
 SQL Query: [Data Combination](https://github.com/maryjanex/GoogleCertCapstone/blob/main/Data%20Combination)
+I combined the 12 csv files into one table named "combined_data" containing 5,933,712 rows of data.
 
+**Data Exploration**
+SQL Query: 
+  - The ride_id column is the primary key containing 16 numbers in all the rows.
+  - rideable_type - three unique types of bikes
+      electric bike: 1,408,308
+      classic bike: 2,772,172
+      electric scooter: 46,940
+  - There are 7,801 trips with durations longer than 24 hours and 136,108 trips less than a one-minute duration removed from the dataset.
+  - Total of 1,079,270 rows are removed where both start_station_name and start_station_id are missing.
+  - Total of 1,112,056 rows are removed where both end_station_name and end_station_id are missing.
+  - Total of 7,417 rows are removed where both end_lat and end_lng are missing.
+  - member_casual column has two unique types of memberships
+      member: 2,710,468
+      casual: 1,516,952
+
+**Data Cleaning**
+SQL Query:
+- Rows with missing values were deleted.
+- ride_length, day_of_week, and month are added.
+- Trips longer than 24 hours and less than one minute were removed.
+- 1,706,262 total rows were removed.
+  
 # Analyze
+
 # Share
 # Act
