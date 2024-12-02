@@ -52,7 +52,9 @@ SQL Query: [Data Cleaning](https://github.com/maryjanex/GoogleCertCapstone/blob/
 Data Visualization: [Tableau](https://public.tableau.com/app/profile/mary.jane.nguyen4796/viz/GoogleDataAnalyticsCapstone_17325976399410/AvgRideLengthRideType)
 
 After my exploration and cleaning - my dataset is ready to be visualized using Tableau. I created multiple tables for analysis and to visualize them.
+
 **Main Question** _How do annual members and casual riders use Cyclistic bikes differently?_
+
 I created four different visualizations
 - Bike Type Comparison
 Majority of the riders are members of Cyclistic with 64.12% being members while 35.88% are casual riders. Classic and electric bikes are used mainly by members while electric scooters are used more by casual riders.
